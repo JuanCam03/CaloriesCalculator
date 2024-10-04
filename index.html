@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maintenance Calories Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Maintenance Calories Calculator (TDEE)</h1>
+    <form id="tdeeForm">
+      <label for="gender">Gender:</label>
+      <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      
+      <label for="age">Age (years):</label>
+      <input type="number" id="age" placeholder="Age" required>
+
+      <label for="weight">Weight (pounds):</label>
+      <input type="number" id="weight" placeholder="Weight in pounds" required>
+
+      <label for="heightFeet">Height (feet):</label>
+      <input type="number" id="heightFeet" placeholder="Feet" required>
+
+      <label for="heightInches">Height (inches):</label>
+      <input type="number" id="heightInches" placeholder="Inches" required>
+
+      <label for="activity">Activity Level:</label>
+      <select id="activity">
+        <option value="1.2">Sedentary</option>
+        <option value="1.375">Lightly active (exercise 1-3 days/week)</option>
+        <option value="1.55">Moderately active (exercise 3-5 days/week)</option>
+        <option value="1.725">Very active (exercise 6-7 days/week)</option>
+        <option value="1.9">Super active (intense exercise or physical job)</option>
+      </select>
+
+      <button type="submit">Calculate TDEE</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
