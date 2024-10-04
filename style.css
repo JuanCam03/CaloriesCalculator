@@ -1,51 +1,55 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://cdn.glitch.global/c26b69f4-2dbf-4508-9c3d-1368c0917b58/pexels-dogu-tuncer-339534179-16996377.jpg?v=1728069653075'); /* Reemplaza con el nombre de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    color: white; /* Cambia el color del texto a blanco para que sea legible sobre el fondo */
 }
 
 .container {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  width: 300px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para la sección de contenido */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados para la sección */
+    max-width: 600px;
+    margin: auto; /* Centra el contenedor */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra alrededor del contenedor */
 }
 
 h1 {
-  text-align: center;
+    text-align: center;
 }
 
 label {
-  display: block;
-  margin-top: 10px;
+    display: block;
+    margin: 10px 0 5px;
 }
 
-input, select, button {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
 }
 
 button {
-  margin-top: 20px;
-  background-color: #28a745;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745; /* Color del botón */
+    color: white; /* Color del texto del botón */
+    font-size: 16px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
 button:hover {
-  background-color: #218838;
+    background-color: #218838; /* Color del botón al pasar el mouse */
 }
 
 #result {
-  margin-top: 20px;
-  font-size: 18px;
-  text-align: center;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
 }
