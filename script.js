@@ -31,4 +31,22 @@ document.getElementById("tdeeForm").addEventListener("submit", function(event) {
   
   // Display the result
   document.getElementById("result").innerHTML = `Your TDEE is approximately <strong>${Math.round(tdee)} calories</strong> per day.`;
+  
+  // Show calorie adjustment options
+  document.getElementById("calorieAdjustments").style.display = "block";
+
+  // Handle deficit or surplus calculation
+  document.getElementById("deficitBtn").onclick = function() {
+    const deficit = 500; // Deficit de 500 calorías
+    const newCalories = tdee - deficit; // Calorías para déficit
+    document.getElementById("finalResult").innerHTML = `To achieve a caloric deficit, your new intake should be approximately <strong>${Math.round(newCalories)} calories</strong> per day.`;
+    document.getElementById("finalResult").style.display = "block";
+  };
+
+  document.getElementById("surplusBtn").onclick = function() {
+    const surplus = 300; // Superávit de 300 calorías
+    const newCalories = tdee + surplus; // Calorías para superávit
+    document.getElementById("finalResult").innerHTML = `To achieve a caloric surplus, your new intake should be approximately <strong>${Math.round(newCalories)} calories</strong> per day.`;
+    document.getElementById("finalResult").style.display = "block";
+  };
 });
